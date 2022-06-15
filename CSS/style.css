@@ -1,0 +1,625 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Open+Sans&family=Play&family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Play&family=Source+Sans+Pro:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+    background: rgb(225, 224, 224);
+}
+
+.topo{
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 55vh;
+    background-repeat: no-repeat;
+    background-image: url(../img/topo.png);
+    background-position: center center;
+    background-size: 100%;
+    z-index: +1;
+}
+
+.JD{
+    font-size: 40px;
+    font-family:'Source Sans Pro', sans-serif;
+    color: #fff;
+    top: 85%;
+    text-align: center;
+    position: relative;
+}
+
+.titulo
+{
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    top: 50px;
+    margin: 0px 300px;
+    position: relative;
+}
+
+.titulo .sobretitulo{
+    color: rgb(22, 52, 225);
+}
+
+.titulo .gradetitulo{
+    color: rgb(22, 52, 225);
+}
+
+header{
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: +1;
+    border-color: rgb(0, 0, 0);
+}
+
+header .nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    position: sticky;
+    top: 0;
+    background: rgb(0, 0, 0);
+}
+
+header .nav_item{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 15px;
+}
+
+header .nav_link{
+    display: flex;
+    font-weight: 500;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    position: relative;
+    padding:  5px 0;
+    overflow: hidden;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .3s;
+}
+
+header .nav_link::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 100%;
+    width: 50%;
+    height: 2px;
+    background: rgb(255, 255, 255);
+    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+header .sobreitem .nav_link::before{
+    background: rgb(22, 52, 225);
+}
+
+header .institem .nav_link::before{
+    background: rgb(22, 151, 225);
+}
+
+header .certitem .nav_link::before{
+    background: rgb(22, 225, 107);
+}
+
+header .positem .nav_link::before{
+    background: rgb(200, 212, 25);
+}
+
+header .mercitem .nav_link::before{
+    background: rgb(225, 154, 22);
+}
+
+header .cuiditem .nav_link::before{
+    background: rgb(190, 10, 10);
+}
+
+header .nav_link::after{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 100%;
+    width: 50%;
+    height: 2px;
+    background: rgb(255, 255, 255);
+    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+header .sobreitem .nav_link::after{
+    background: rgb(22, 52, 225);
+}
+
+header .institem .nav_link::after{
+    background: rgb(22, 151, 225);
+}
+
+header .certitem .nav_link::after{
+    background: rgb(22, 225, 107);
+}
+
+header .positem .nav_link::after{
+    background: rgb(231, 239, 0);
+}
+
+header .mercitem .nav_link::after{
+    background: rgb(225, 154, 22);
+}
+
+header .cuiditem .nav_link::after{
+    background: rgb(190, 10, 10);
+}
+
+header .nav_link:hover{
+    color: rgb(255, 255, 255);
+}
+
+header .sobreitem .nav_link:hover{
+    color: rgb(22, 52, 225);
+}
+
+header .institem .nav_link:hover{
+    color: rgb(22, 151, 225);
+}
+
+header .certitem .nav_link:hover{
+    color: rgb(22, 225, 107);
+}
+
+header .positem .nav_link:hover{
+    color: rgb(231, 239, 0);
+}
+
+header .mercitem .nav_link:hover{
+    color: rgb(225, 154, 22);
+}
+
+header .cuiditem .nav_link:hover{
+    color: rgb(190, 10, 10);
+}
+
+header .nav_link:hover::before{
+    right: 0;
+}
+
+header .nav_link:hover::after{                     
+    left: 0;
+}                
+
+section{
+    position: relative;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1%;
+    height: 100%;
+}
+
+section .sobre{
+    background-color: rgb(0, 0, 0);
+    border: rgb(22, 52, 225);
+    border-style: solid;
+}
+
+section .sobre .secao{
+    font-size: 20px;
+    font-family: 'Play', sans-serif;
+    text-align: left;
+    color: #ffffff;
+    margin: 100px;
+}
+
+.inst{
+    position: relative;
+    height: 110hv;
+    width: 100%;
+    padding: 0px ;
+}
+
+.titulo .institulo{
+    color:  rgb(22, 151, 225);
+ } 
+
+ .privtitulo{
+    font-size: 35px;
+    color:  rgb(22, 151, 225);
+ }
+
+ .publititulo{
+    font-size: 35px;
+    color:  rgb(22, 151, 225);
+ }
+
+ section .inst{
+    background-color: rgb(0, 0, 0);
+    border: rgb(22, 151, 225);
+    border-style: solid;
+}
+
+section .inst .secao{
+    font-size: 20px;
+    font-family: 'Play', sans-serif;
+    text-align: left;
+    color: #ffffff;
+    margin: 100px;
+}
+
+section .facul{
+    position: relative;
+    justify-content: space-between;
+}
+
+.fotosection{
+    position: relative;
+    width: 100%;
+    height: 40%;
+    display: inline-flex;
+}
+
+.fotosection2{
+    position: relative;
+    width: 100%;
+    height: 40%;
+    display: inline-flex;
+}
+
+.fundo{
+    background-color: rgb(194, 194, 194);
+    border: rgb(22, 151, 225);
+    border-style: double;
+    border-radius: 50%;
+    width: 15%;
+    height: 150px;
+    margin: 15px;
+    justify-content: center;
+}
+
+.fundo2{
+    background-color: rgb(194, 194, 194);
+    border: rgb(22, 151, 225);
+    border-style: double;
+    border-radius: 50%;
+    width: 20%;
+    height: 200px;
+    margin-left: 115px;
+}
+
+.fundo #anhanguera{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    opacity: 0.6;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 20px;
+}
+
+.fundo #cruzeiroead{
+    position: relative;
+    top: 30px;
+    width: 145px;
+    height: 75px;
+    opacity: 0.6;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.fundo #UNICID{
+    position: relative;
+    top: 20%;
+    width: 150px;
+    height: 75px;
+    opacity: 0.6;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.fundo #UNIFRAM{
+    position: relative;
+    top: 22%;
+    width: 150px;
+    height: 75px;
+    opacity: 0.6;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.fundo #UNOPAR{
+    position: relative;
+    top: 25%;
+    width: 100px;
+    height: 75px;
+    opacity: 0.6;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 30px;
+}
+
+.fundo #UNIBTA{
+    position: relative;
+    width: 200px;
+    height: 150px;
+    opacity: 0.6;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: -16px;
+}
+
+.fundo2 #FATECAM{
+    position: relative;
+    top: 22%;
+    width: 200px;
+    height: 100px;
+    opacity: 0.6;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 15px;
+}
+
+.fundo2 #IFRJ{
+    position: relative;
+    top: 10%;
+    width: 150px;
+    height: 150px;
+    opacity: 0.6;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 39px;
+}
+
+.fundo2 #FATECLINS{
+    position: relative;
+    top: 20%;
+    width: 200px;
+    height: 125px;
+    opacity: 0.6;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 20px;
+}
+
+#anhanguera:hover{
+    opacity: 1;
+}
+
+#cruzeiroead:hover{
+    opacity: 1;
+}
+
+#UNICID:hover{
+    opacity: 1;
+}
+
+#UNIFRAM:hover{
+    opacity: 1;
+}
+
+#UNOPAR:hover{
+    opacity: 1;
+}
+
+#UNIBTA:hover{
+    opacity: 1;
+}
+
+#FATECAM:hover{
+    opacity: 1;
+}
+
+#IFRJ:hover{
+    opacity: 1;
+}
+
+#FATECLINS:hover{
+    opacity: 1;
+}
+
+.cert{
+    position: relative;
+    height: 110hv;
+    width: 100%;
+    padding: 0px ;
+}
+
+section .cert{
+    background-color: rgb(0, 0, 0);
+    border: rgb(22, 225, 107);
+    border-style: solid;
+}
+
+section .cert .secao{
+    font-size: 20px;
+    font-family: 'Play', sans-serif;
+    text-align: left;
+    color: #ffffff;
+    margin: 100px;
+}
+
+.titulo .certitulo{
+    color: rgb(22, 225, 107);
+}
+
+
+.posgrad{
+    position: relative;
+    height: 110hv;
+    width: 100%;
+    padding: 0px ;
+}
+
+section .posgrad{
+    background-color: rgb(0, 0, 0);
+    border: rgb(200, 212, 25);
+    border-style: solid;
+}
+
+section .posgrad .secao{
+    font-size: 20px;
+    font-family: 'Play', sans-serif;
+    text-align: left;
+    color: #ffffff;
+    margin: 100px;
+}
+
+.titulo .postitulo{
+    color: rgb(200, 212, 25);
+}
+
+.merctrab{
+    position: relative;
+    height: 110hv;
+    width: 100%;
+    padding: 0px ;
+}
+
+section .merctrab{
+    background-color: rgb(0, 0, 0);
+    border: rgb(225, 154, 22);
+    border-style: solid;
+}
+
+section .merctrab .secao{
+    font-size: 20px;
+    font-family: 'Play', sans-serif;
+    text-align: left;
+    color: #ffffff;
+    margin: 100px;
+}
+
+.titulo .merctitulo{
+    color: rgb(225, 154, 22);
+}
+
+.cuid{
+    position: relative;
+    height: 110hv;
+    width: 100%;
+    padding: 0px ;
+}
+
+section .cuid{
+    background-color: rgb(0, 0, 0);
+    border: rgb(190, 10, 10);
+    border-style: solid;
+}
+
+section .cuid .secao{
+    font-size: 20px;
+    font-family: 'Play', sans-serif;
+    text-align: left;
+    color: #ffffff;
+    margin: 100px;
+}
+
+.titulo .cuidtitulo{
+    color: rgb(190, 10, 10);
+}
+
+
+.bolinha{
+    justify-content: right;
+    color: rgb(22, 52, 225);
+}
+
+#sobre{
+    cursor: pointer;
+}
+
+#inst{
+    cursor: pointer;
+}
+
+#cert{
+    cursor: pointer;
+}
+
+#posgrad{
+    cursor: pointer;
+}
+
+#cuid{
+    cursor: pointer;
+}
+
+#merctrab{
+    cursor: pointer;
+}
+
+.footer{
+    padding: 40px 0;
+    background-color: #000000;
+    bottom: 0;
+}
+
+
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: rgb(0, 0, 0, 0.5);
+}
+
+.footer .social a{
+    font-size: 24px;
+    background-color: #fff;
+    color: inherit;
+    border: 1px solid rgb(184, 176, 176);
+    width: 50px;
+    height: 47px;
+    line-height: 38px;
+    justify-content: center;
+    display: inline-block;
+    text-align: center;
+    margin: 0 8px;
+    opacity: 0.65;
+}
+
+.footer .social a:hover{
+    opacity: 1;
+}
+
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer ul li a{
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.footer ul li a:hover{
+    opacity: 1;
+}
+
+.footer .copyright{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: rgb(169, 165, 165);
+}
+
+.footer .lista{
+    color: whitesmoke;
+}
