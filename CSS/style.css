@@ -231,9 +231,14 @@ section .sobre .secao{
 }
 
 .imgsection #anima_div{
-    background: url("../img/sprites/sonic_sprite.png");
-    height: 50px;
-    width: 50px;
+    background: url('img/sprites/sonic_sprite.png') no-repeat 1px 2px;
+	width: 651px;
+	height: 35px;
+    animation: anima-sprite 5s steps(31 infinite);
+}
+
+@keyframes anima-sprite{
+    100%{background-position-x: -651px;}
 }
 
 .inst{
@@ -315,7 +320,7 @@ section .facul{
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: 20px;
-    margin-left: 29px;
+    margin-left: 14px;
 }
 
 .fundo #cruzeiroead{
@@ -324,7 +329,6 @@ section .facul{
     width: 145px;
     height: 75px;
     opacity: 0.6;
-
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -357,7 +361,7 @@ section .facul{
     opacity: 0.6;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-left: 30px;
+    margin-left: 16px;
 }
 
 .fundo #UNIBTA{
@@ -367,7 +371,7 @@ section .facul{
     opacity: 0.6;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-left: -16px;
+    margin-left: -23px;
 }
 
 .fundo2 #FATECAM{
@@ -378,7 +382,7 @@ section .facul{
     opacity: 0.6;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-left: 15px;
+    margin-left: 4px;
 }
 
 .fundo2 #IFRJ{
@@ -389,7 +393,7 @@ section .facul{
     opacity: 0.6;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-left: 39px;
+    margin-left: 30px;
 }
 
 .fundo2 #FATECLINS{
@@ -400,7 +404,7 @@ section .facul{
     opacity: 0.6;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 #anhanguera:hover{
